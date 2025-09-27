@@ -25,7 +25,7 @@ Mikasa VoiceBot is an intelligent voice assistant project designed to recognize,
 - 🗣️ **Contextual Response Generation**: Responds to queries with dynamic, context-aware answers.
 - 🔄 **Text to Speech**: Converts text responses back to speech for seamless interaction.
 - 🔌 **Extensible Skills**: Plug-in architecture allows easy addition of new skills/integrations.
-- 🏃 **Cross-platform Support**: Works on Windows, macOS, Linux.
+- 🏃 **Cross-platform Support**: Works on Windows, macOS, Linux.(implemented in windows)
 
 ---
 
@@ -78,7 +78,8 @@ Mikasa VoiceBot is an intelligent voice assistant project designed to recognize,
 
 1. **Start the voicebot:**
    ```bash
-   python main.py
+   python agent.py console (in VS code)
+   python agent.py dev (to run in livekit playground)
    ```
 
 2. **Interact using your voice!**
@@ -95,7 +96,7 @@ Mikasa VoiceBot is an intelligent voice assistant project designed to recognize,
 
 ## Configuration
 
-- Edit the `config.yaml` or `.env` file for settings such as:
+- Edit the `.env` file for settings such as:
   - Speech-to-text engine/API (e.g., Google, Vosk, Azure)
   - NLP provider (e.g., spaCy, transformers, Rasa)
   - Hotword detection settings
@@ -129,28 +130,19 @@ def tell_weather(query):
 
 ```
 Mikasa-VoiceBot/
-├── main.py
+├── agent.py
 ├── requirements.txt
-├── config.yaml
-├── skills/
-│   ├── __init__.py
-│   ├── weather.py
-│   └── ...
-├── nlp/
-│   └── ...
-├── stt/
-│   └── ...
-├── tts/
-│   └── ...
+├── .env
+├── tools.py
+├── prompts.py
 └── README.md
 ```
 
----
 
 ## Dependencies
 
-- `speechrecognition` / `vosk` / `pyaudio` (for STT)
-- `pyttsx3` / `gTTS` (for TTS)
+- `Livekit account`
+- `Google peoject Key`
 - `transformers`, `spacy`, or `rasa` (for NLP)
 - See `requirements.txt` for the full list
 
