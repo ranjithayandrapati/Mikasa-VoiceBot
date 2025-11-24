@@ -87,11 +87,10 @@ Mikasa VoiceBot is an intelligent voice assistant project designed to recognize,
    - Mikasa VoiceBot will recognize your command, process it, and respond.
 
 3. **Example commands:**
-   - "What time is it?"
-   - "Tell me a joke."
+   - "What is the best Anime to watch ?"
+   - "Give me Top 10 Anime movies list to watch in 2025/2026 ?"
    - "What's the weather like?"
-   - "Open YouTube."
-
+  
 ---
 
 ## Configuration
